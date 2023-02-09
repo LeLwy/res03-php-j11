@@ -6,12 +6,13 @@ session_start();
         
 require 'services/Router.php';
 
-$router = new Router();
+$newRouter = new Router();
 
 if (isset ($_GET["route"])){
     
-    $newRouter->checkRoute($_GET["route"]);
+    $newRouter->checkRoute($newRouter->getUc());
 }
 else{
+    
     $newRouter->checkRoute("");
 }

@@ -10,6 +10,16 @@
             
             $this->uc = new UserController();
         }
+    
+        public function getUc() : UserController
+        {
+            return $this->uc;
+        }
+    
+        public function setUc(int $uc) : void
+        {
+            $this->uc = $uc;
+        }
         
         public function checkroute(string $route) : void 
         {

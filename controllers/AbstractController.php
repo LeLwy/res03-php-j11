@@ -8,6 +8,6 @@
             $template = $view;
             $data = $value;
             
-            require './views/layout.phtml';
+            require 'views/layout.phtml';
         }
     }
