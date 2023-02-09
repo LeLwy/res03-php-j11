@@ -10,9 +10,5 @@ $newRouter = new Router();
 
 if (isset ($_GET["route"])){
     
-    $newRouter->checkRoute($newRouter->getUc());
-}
-else{
-    
-    $newRouter->checkRoute("");
+    $newRouter->checkRoute($_GET["route"]);
 }
