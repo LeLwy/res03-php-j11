@@ -8,6 +8,16 @@
             
             $this->manager = $manager;
         }
+    
+        public function getManager() : UserManager
+        {
+            return $this->manager;
+        }
+    
+        public function setManager(UserManager $manager) : void
+        {
+            $this->manager = $manager;
+        }
         
         public function index()
         {
